@@ -51,7 +51,7 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-  - host: go.kloud.jacexperts.io
+  - host: go.cloud.jacexperts.io/
     http:
       paths:
         - path: /
