@@ -51,7 +51,7 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-  - host: go.cloud.jacexperts.io/
+  - host: goteste.cloud.jacexperts.io/
     http:
       paths:
         - path: /
