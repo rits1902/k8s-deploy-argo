@@ -4,7 +4,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: go-server
-  #namespace: go
   labels:
     app: goapi
 spec:
@@ -17,8 +16,6 @@ spec:
       labels:
         app: goapi
     spec:
-      imagePullSecrets:
-      - name: pipeline-docker-registry
       containers:
       - name: goapi
         image: rits1902/k8s-deploy-argo
@@ -30,7 +27,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: go-service
-  #namespace: go
 spec:
   selector:
     app: goapi
