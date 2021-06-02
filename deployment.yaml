@@ -21,7 +21,7 @@ spec:
       - name: pipeline-docker-registry
       containers:
       - name: goapi
-        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+        image: rits1902/k8s-deploy-argo
         ports:
         - containerPort: 80
 
